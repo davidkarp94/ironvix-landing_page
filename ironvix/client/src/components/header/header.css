@@ -1,11 +1,13 @@
 .header-container {
     padding: 1rem;
-    margin: 1rem 2rem;
-    border-radius: 10px;
-
+    border-radius: 15px;
+    width: calc(100% - 4rem);
     background-color: var(--blue);
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
+    position: fixed;
+    margin-top: 1rem;
 }
 
 .logo img {
