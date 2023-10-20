@@ -1,0 +1,15 @@
+.carousel-container {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-text-container {
+    background-color: rgba(0, 0, 0, .5);
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.carousel-text-container h5,
+.carousel-container p {
+    color: var(--gray);
+}

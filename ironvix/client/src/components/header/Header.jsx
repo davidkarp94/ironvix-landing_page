@@ -7,6 +7,8 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai"
 
 const Header = () => {
 
+  const headerHeight = '6rem';
+
   return (
     <div className='flex flex-center'>
       <div className='flex header-container'>
@@ -17,19 +19,19 @@ const Header = () => {
         </div> {/* logo */}
       
         <div className='flex nav-links'>
-          <a href="">
+          <a href="#home" id='home-link'>
             <p className='raleway-bold'>HOME</p>
           </a>
-          <a href="">
+          <a href="#portfolio">
             <p className='raleway-bold'>PORTFOLIO</p>
           </a>
-          <a href="">
+          <a href="#servicios">
             <p className='raleway-bold'>SERVICIOS</p>
           </a>
-          <a href="">
+          <a href="#nosotros">
             <p className='raleway-bold'>NOSOTROS</p>
           </a>
-          <a href="">
+          <a href="#contacto">
             <p className='raleway-bold'>CONTACTO</p>
           </a>
           </div> {/* nav-links */}

@@ -1,0 +1,12 @@
+.title-container {
+    border-radius: 15px;
+    background-color: var(--blue);
+    padding: 0 3rem;
+    border: 2px var(--gray) solid;
+}
+
+.title-container p {
+    color: var(--gray);
+    font-size: 2rem;
+    margin-bottom: 0;
+}

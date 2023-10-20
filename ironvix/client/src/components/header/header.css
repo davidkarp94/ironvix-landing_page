@@ -1,13 +1,13 @@
 .header-container {
     padding: 1rem;
     border-radius: 15px;
-    width: calc(100% - 4rem);
+    width: calc(100% - 10rem);
     background-color: var(--blue);
     align-items: center;
     justify-content: space-between;
     z-index: 999;
     position: fixed;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .logo img {
@@ -22,10 +22,15 @@
     cursor: pointer;
     color: var(--gray);
     transition: all .2s;
+    margin: 0;
 }
 
 .nav-links p:hover {
     color: var(--red);
+}
+
+.nav-links a {
+	text-decoration: none;
 }
 
 .social-logos {
@@ -44,4 +49,18 @@
 
 .x:hover {
     background-color: var(--black);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+    .header-container {
+        width: calc(100% - 6rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        width: calc(100% - 2rem);
+    }
 }
