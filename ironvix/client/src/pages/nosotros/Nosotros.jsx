@@ -16,12 +16,12 @@ const Nosotros = () => {
       image: placeholder
     },
     {
-      name: 'Nacho Calvo',
+      name: 'Nacho Vocal',
       occupation: 'Ironvix CEO',
       image: placeholder
     },
     {
-      name: 'Nacho Calvo',
+      name: 'Big Chungus',
       occupation: 'Ironvix CEO',
       image: placeholder
     },

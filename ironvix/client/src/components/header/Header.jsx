@@ -31,7 +31,7 @@ const Header = () => {
     <div className='flex flex-center'>
       <div className='flex header-container'>
         <div className='logo'>
-          <a href="">
+          <a href="#home">
             <img src={windowWidth > 900 ? logo : logo_simp} alt="Ironvix Logo" />
           </a>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import Title from '../../components/title/Title';
 import placeholder from '../../assets/images/wedding.jpeg'
+import PortfolioImage from '../../components/portfolio/PortfolioImage';
 
 const Portfolio = () => {
 
@@ -47,11 +48,12 @@ const Portfolio = () => {
 
         <div className='portfolio-images'>
           {images.map((image, index) => (
-            <div className="portfolio-image">
-              <div className='overlay'></div>
-              <img src={image.src} alt={image.alt} key={index} />
-              <p className='raleway-bold'>{image.title}</p>
-            </div>
+            <PortfolioImage 
+            src={image.src}
+            alt={image.alt}
+            key={index}
+            title={image.title}
+            />
           ))}
         </div>
 

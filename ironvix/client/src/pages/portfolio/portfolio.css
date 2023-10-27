@@ -15,48 +15,6 @@
     gap: 3rem;
 }
 
-.portfolio-images img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.portfolio-image {
-    position: relative;
-    cursor: pointer;
-}
-
-.overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: tranparent;
-	transition: all .5s;
-	z-index: 1;
-}
-
-.portfolio-image:hover .overlay {
-	background: rgba(0,0,0,.5);
-}
-
-.portfolio-image p {
-    opacity: 0;
-    margin: 0;
-    color: var(--gray);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    text-align: center;
-
-    z-index: 1;
-    transition: 1s;
-}
-
-.portfolio-image:hover p {
-    opacity: 1;
-}
-
 /* Responsive */
 
 @media screen and (max-width: 1280px) {

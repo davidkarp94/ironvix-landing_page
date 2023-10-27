@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import placeholder from '../../assets/images/wedding.jpeg';
+import placeholderVertical from '../../assets/images/tower.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './carousel.css';
 
 function CarouselComponent() {
-  // Array de objetos con la información de cada diapositiva
-  // REEMPLAZAR CON DB
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowWidth]);
+
   const slides = [
     {
       src: placeholder,
@@ -32,10 +45,9 @@ function CarouselComponent() {
         <Carousel.Item key={index}>
           <img
             className="d-block w-100"
-            src={slide.src}
+            src={ windowWidth > 768 ? placeholder : placeholderVertical }
             alt={slide.alt}
           />
-          {/* Puedes descomentar la sección de Carousel.Caption si deseas agregar texto a cada diapositiva */}
           {/* <Carousel.Caption>
               <div className="carousel-text-container">
                   <h5>First slide label</h5>
