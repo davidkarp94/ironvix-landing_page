@@ -12,6 +12,12 @@
 
 .logo img {
     max-width: 15rem;
+    max-height: 37px
+}
+
+.nav-links_container {
+    align-items: center;
+    gap: 1rem;
 }
 
 .nav-links {
@@ -51,11 +57,35 @@
     background-color: var(--black);
 }
 
+.mobile-menu {
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+    top: 3.5rem;
+    right: 0px;
+    background-color: var(--blue);
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+
+    flex-direction: column;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1024px) {
     .header-container {
         width: calc(100% - 6rem);
+    }
+    
+    .nav-links p {
+        font-size: .9rem;
     }
 }
 
