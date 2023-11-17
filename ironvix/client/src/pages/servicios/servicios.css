@@ -1,13 +1,55 @@
 .servicios-container {
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
     border-radius: 15px;
+    flex-direction: column;
+    gap: 2rem;
 
     background-color: var(--black);
     align-items: center;
     justify-content: space-between;
 
-    height: 20rem;
-
     position: relative;
+}
+
+.servicios-content {
+    margin-top: 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 25rem;
+    background-color: var(--orange);
+    padding: 1rem;
+    border: 3px solid var(--gray);
+    border-radius: 8px;
+    height: 40rem;
+}
+
+.servicio-title {
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+.servicio-content {
+    color: var(--gray);
+}
+
+.servicio-button {
+    padding: .5rem 1rem;
+    border: 2px solid var(--gray);
+    background-color: var(--blue);
+    color: var(--gray);
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+
+.servicio-button:hover {
+    background-color: var(--red);
 }

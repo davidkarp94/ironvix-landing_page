@@ -1,5 +1,5 @@
 .contacto-container {
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
     border-radius: 15px;
 
@@ -7,7 +7,120 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 20rem;
-
     position: relative;
+}
+
+.contacto-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    margin-top: 5rem;
+}
+
+.contacto-social_title {
+    color: var(--gray);
+}
+
+.social-red {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: var(--red);
+    font-size: 3rem;
+}
+
+.social-text {
+    color: var(--gray);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.social-text:hover {
+    color: var(--red);
+}
+
+.contacto-form {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    border-radius: 8px;
+    padding: .5rem;
+    border: none;
+}
+
+.contacto-submit {
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacto-button {
+    padding: .5rem;
+    border-radius: 8px;
+    margin: .5rem 0 1rem 0;
+
+    background-color: var(--blue);
+    border: 2px solid var(--gray);
+    color: var(--gray);
+
+    transition: all .5s ease;
+}
+
+.contacto-button:hover {
+    background-color: var(--red);
+}
+
+.message-sent {
+    color: var(--red);
+    font-size: 1rem;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    margin-bottom: 0;
+}
+
+.message-sent.visible {
+    visibility: visible;
+}
+
+.contacto-email_copy-container {
+    gap: 1rem;
+}
+
+.contacto-email_copy {
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contacto-email_copy:hover {
+    color: var(--red);
+}
+
+.copy-message {
+    color: var(--red);
+    transition: all .5s ease;
+    visibility: hidden;
+}
+
+.copy-message.copy-visible {
+    visibility: visible;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 968px) {
+    .contacto-content {
+        display: block;
+    }
+
+    .contacto-social {
+        margin-bottom: 2rem;
+    }
+
 }

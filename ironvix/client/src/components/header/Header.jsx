@@ -28,7 +28,7 @@ const Header = () => {
   }, [windowWidth]);
 
   return (
-    <div className='flex flex-center'>
+    <div className='flex flex-center' id='header'>
       <div className='flex header-container'>
         <div className='logo'>
           <a href="#home">
